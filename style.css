@@ -1,0 +1,39 @@
+*{
+    margin: 50px;
+}
+body{
+    background-color: rgb(71, 18, 18);
+}
+
+.main{
+    background-color: rgb(221, 209, 194);
+    display: flex;
+    width: 80%;
+    height: 80vh;
+    justify-content: center;
+    padding: 20px;
+    place-items: center;
+    margin: auto;
+    flex-wrap:wrap;
+
+}
+.color1{
+    background-color: hsl(31, 77%, 52%);
+    width: 26.6%;
+    height: 80%; 
+    margin: auto;   
+    }
+    
+    .color2{
+        background-color: hsl(184, 100%, 22%);
+        width: 26.6%;
+        height:80%;
+        margin: auto;
+        }
+    
+        .color3{
+            background-color: hsl(179, 100%, 13%);
+            width: 26.6%;
+            height: 80%;
+            margin: auto;
+            }
