@@ -28,7 +28,7 @@ main {
 
 main div {
   padding: 2em;
-
+background-color: black;
   text-align: center;
 
   /*grid-template-areas: ;*/
@@ -37,27 +37,33 @@ main div {
 .item-a {
   background-color: hsl(2, 90%, 50%);
   /*grid-area: a;*/
-  width:186%;
+  width:194%;
+  height: 7em;
 }
 
 .item-b {
-  background-color: hsla(12, 91%, 45%, 0.815);
+  background-color: hsla(49, 91%, 45%, 0.815);
   grid-area: b;
+  height: 7em;
+  width: 77%;
 }
 
 .item-c {
   background-color: hsl(120, 92%, 15%);
   grid-area: c;
+  height: 7em;
 }
 
 .item-d {
   background-color: hsl(197, 70%, 21%);
   grid-area: d;
-  /*height:18%*/
+  height:0.2em;
 }
 
 .item-e {
   background-color: hsl(197, 70%, 21%);
 
   grid-area: e;
+  height:2.5em;
+
 }
