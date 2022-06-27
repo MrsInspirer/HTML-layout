@@ -1,3 +1,6 @@
+@media screen and (max-width:1440px) {
+  
+
 * {
   margin: 0;
 
@@ -17,9 +20,9 @@ body {
 main {
   display: grid;
   grid-template-areas: 
-  "a a a b b"
-  "c c d d d"
-  "c c e e e"
+  "a a b"
+  "c d d"
+  "c e e"
   ;
   width: 50%;
   margin: auto;
@@ -37,7 +40,7 @@ background-color: black;
 .item-a {
   background-color: hsl(2, 90%, 50%);
   /*grid-area: a;*/
-  width:194%;
+  width:150%;
   height: 7em;
 }
 
@@ -45,7 +48,7 @@ background-color: black;
   background-color: hsla(49, 91%, 45%, 0.815);
   grid-area: b;
   height: 7em;
-  width: 77%;
+  width:74%;
 }
 
 .item-c {
@@ -66,4 +69,5 @@ background-color: black;
   grid-area: e;
   height:2.5em;
 
+}
 }

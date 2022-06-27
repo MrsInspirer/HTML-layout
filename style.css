@@ -1,87 +1,213 @@
 body {
-    background-color: rgb(221, 209, 194);
-  width: 100%;
-  display: flex;
-  min-height: 100vh;
-  justify-content: center;
-  place-content: center;
+  background-color: rgb(221, 209, 194);
+width: 100%;
+display: flex;
+min-height: 100vh;
+justify-content: center;
+place-content: center;
 }
 
 .main {
-  display: flex;
-  max-width: 100%;
-  width: 1440px;
-  max-height: 100vh;
-  justify-content: center;
-  padding: 80px 0px;
-  align-items: center;
-  flex-flow: wrap;
+display: flex;
+max-width: 100%;
+max-height: 100%;
+justify-content: center;
+padding: 80px 0px;
+align-items: center;
 }
 .container-1 {
-  background-color: hsl(31, 77%, 52%);
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-  width: 25%;
-    height: 100%; 
-    padding:10px;
+background-color: hsl(31, 77%, 52%);
+border-top-left-radius: 10px;
+border-bottom-left-radius: 10px;
+width: 25%;
+
+  height: 100%; 
+  padding:10px;
+  
 }
 
 .container-2 {
-  background-color: hsl(184, 100%, 22%);
-  width: 25%;
-        height:80%;
-        padding:10px;
-        
+background-color: hsl(184, 100%, 22%);
+width: 25%;
+
+      height:80%;
+      padding:10px;
+      
 }
 
-.container-3 {
-  background-color: hsl(179, 100%, 13%);
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-  width: 25%;
-            height: 100%;
-            padding:10px;
+.container-3{
+background-color: hsl(179, 100%, 13%);
+border-top-right-radius: 10px;
+border-bottom-right-radius: 10px;
+width: 25%;
+
+          height: 80%;
+          padding:10px;
+          display:flex;
+          flex-direction: column;
 }
 
 
 
 .btn{
-    margin:100px 0;
-    padding:10px 40px;
-    border-radius: 30px;
-    outline:none;
-    font-weight: 700;
-    font-size: 15px;
-    cursor: pointer;
+  margin:100px 0;
+  padding:10px 40px;
+  border-radius: 30px;
+  outline:none;
+  font-weight: 700;
+  font-size: 15px;
+  cursor: pointer;
 
 }
 
 
 .btn:hover{
-    background-color: transparent;
-    color:#fff;
-    transition: 0.5s;
+  background-color: transparent;
+  color:#fff;
+  transition: 0.5s;
 }
 
 .box{
-    width:375px;
-    padding:20px;
-    min-height: 430px;
+  width:375px;
+  padding:20px;
+  min-height: 430px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .btn1{
-    margin:10px 0;
-    padding:10px 40px;
-    border-radius: 30px;
-    outline: auto;
-    font-weight: 700;
-    font-size: 15px;
-    cursor: pointer;
+  margin:10px 0;
+  padding:10px 40px;
+  border-radius: 30px;
+  outline: auto;
+  font-weight: 700;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+/*Button for the Grid page*/
+.btn2{
+  margin-bottom: 10px;
+  padding:10px 40px;
+  border-radius: 30px;
+  outline: none;
+  font-weight: 700;
+  font-size: 15px;
+  cursor: pointer;
+  justify-items: center;
+  
+  background-color: aqua;
+  width:11em;
 }
 h1{
-    font-family: 'lexend deca', sans-serif;
-    margin:10px
+  font-family: 'lexend deca', sans-serif;
+  margin:10px
 }
 p{
-    font-family: 'big shoulders display', cursive;
-    margin:10px;
+  font-family: 'big shoulders display', cursive;
+  margin:10px;
 }
+@media screen and (max-width:1440px) {
+  .main{
+    /*flex-flow:wrap;*/
+    flex-direction: row;
+    height:50vh;
+        width:100%;
+    flex:30%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+
+.container-1{
+flex-direction: row;
+flex-flow: wrap;
+height:100%;
+width: 25%;
+padding: 20px;
+margin: 0px;
+z-index: 2px;
+}
+.container-2{
+flex-direction: column;
+height:100%;
+width: 25%;
+padding: 20px;
+margin: 0px;
+
+}
+.container-3{
+flex-direction: column;
+height:80%;
+width: 25%;
+padding: 20px;
+margin: 0px;
+z-index: 2px;
+
+}
+p{
+text-size-adjust:10px;
+}
+}
+.btn1{
+  margin:10px 0;
+  padding:10px 40px;
+  border-radius: 30px;
+  outline: auto;
+  font-weight: 700;
+  font-size: 15px;
+  cursor: pointer; 
+  position: relative;
+  bottom:40px;
+  right:-8px
+}
+.btn2{
+ 
+  padding:10px 40px;
+  border-radius: 30px;
+  outline: none;
+  font-weight: 700;
+  font-size: 15px;
+  cursor: pointer;
+  justify-items: center;
+  
+  background-color: aqua;
+  width:11em;
+  position: relative;
+  bottom:70px;
+  right:-8px
+ 
+}
+
+
+
+@media screen and (max-width:375px) {
+  .main{
+    display: flex;
+    flex-direction: column;
+    height:100%;
+    width:100%;
+    margin:0;
+  }
+  .container-1{
+flex-direction: column;
+height:30%;
+width: 100%;
+
+  }
+  .container-2{
+    flex-direction: column;
+    height:30%;
+    width: 100%;
+ 
+  }
+  .container-3{
+    flex-direction: column;
+    height:30%;
+    width: 100%;
+  }}
+  p{
+    text-size-adjust:12px;
+  }
+
+  
