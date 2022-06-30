@@ -5,6 +5,8 @@ display: flex;
 min-height: 100vh;
 justify-content: center;
 place-content: center;
+font-family: url('https://fonts.google.com/specimen/Lexend+Deca');
+font-family: url('https://fonts.google.com/specimen/Big+Shoulders+Display');
 }
 
 .main {
@@ -15,26 +17,27 @@ justify-content: center;
 padding: 80px 0px;
 align-items: center;
 }
+
+/*SEDAN Container*/
 .container-1 {
 background-color: hsl(31, 77%, 52%);
 border-top-left-radius: 10px;
 border-bottom-left-radius: 10px;
 width: 25%;
-
   height: 100%; 
   padding:10px;
   
 }
-
+/*SUV Container*/
 .container-2 {
 background-color: hsl(184, 100%, 22%);
 width: 25%;
-
-      height:80%;
-      padding:10px;
+height:80%;
+padding:10px;
       
 }
 
+/*LUXURY Container*/
 .container-3{
 background-color: hsl(179, 100%, 13%);
 border-top-right-radius: 10px;
@@ -57,7 +60,7 @@ width: 25%;
   font-weight: 700;
   font-size: 15px;
   cursor: pointer;
-
+/*background-color: hsl(0, 0%, 95%);*/
 }
 
 
@@ -74,6 +77,8 @@ width: 25%;
   margin-left: auto;
   margin-right: auto;
 }
+
+/*github repo button*/
 .btn1{
   margin:10px 0;
   padding:10px 40px;
@@ -94,18 +99,43 @@ width: 25%;
   font-size: 15px;
   cursor: pointer;
   justify-items: center;
-  
   background-color: aqua;
   width:11em;
 }
+
+/*heading*/
 h1{
   font-family: 'lexend deca', sans-serif;
-  margin:10px
+  font-weight: 400;
+  margin:10px;
+  color:hsl(0, 0%, 95%);
 }
+
+/*Paragraph Containing the article for each vehicle*/
 p{
   font-family: 'big shoulders display', cursive;
   margin:10px;
+  font-weight: 700;
+  color: hsla(0, 0%, 100%, 0.75);
 }
+
+/*the button info for container-1, containeer-2 and container-3*/
+#btnbg1{
+  background-color: hsl(31, 77%, 52%);
+  border-color: hsl(0, 0%, 95%);
+
+}
+  #btnbg2{
+    background-color: hsl(184, 100%, 22%);
+    border-color: hsl(0, 0%, 95%);
+  }
+
+#btnbg3{
+  background-color: hsl(179, 100%, 13%);
+  border-color: hsl(0, 0%, 95%);
+}
+
+
 @media screen and (max-width:1440px) {
   .main{
     /*flex-flow:wrap;*/
@@ -143,8 +173,8 @@ width: 25%;
 padding: 20px;
 margin: 0px;
 z-index: 2px;
-
 }
+
 p{
 text-size-adjust:10px;
 }
@@ -161,6 +191,7 @@ text-size-adjust:10px;
   bottom:40px;
   right:-8px
 }
+
 .btn2{
  
   padding:10px 40px;
@@ -189,6 +220,7 @@ text-size-adjust:10px;
     width:100%;
     margin:0;
   }
+
   .container-1{
 flex-direction: column;
 height:30%;
@@ -205,9 +237,9 @@ width: 100%;
     flex-direction: column;
     height:30%;
     width: 100%;
-  }}
+  }
   p{
     text-size-adjust:12px;
   }
-
+}
   
